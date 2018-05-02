@@ -25,7 +25,41 @@
 	*  코드로 Constraint를 잡음으로써 가독성에 장점이 있지만, 이 두방법 모두 UI가 복잡해지면 복잡할수록, 가독성이 떨어지고 퍼포먼스 저하로 이어질수 있다고 한다.
 	*  `Texture`	의 경우 CSSFlexBox를 이용한 Layout설계를 바탕으로 가독성이 뛰어나고 디자이너의 요구사항을 대처하기 쉽다.
 
+	* flexBox에 대해 확인 연습할수 있는 링크 (Texture의 layoutSpec은 YogaLayout기반을 작성)
+		* [Flexbox Froggy](http://huytnguyen.me/froggy-asdk-layout/)
+		* [YogaLayout](https://yogalayout.com/)
 	
 	
-### Nodes
-![이미지](/var/folders/78/p079wqbd50q6tz_f35r46jph0000gn/T/ro.nextwave.Snappy/ro.nextwave.Snappy/2765EF98-0B6C-46DA-97D4-5C9B7726DAF8.png)
+#### Nodes
+![이미지](https://github.com/GisuHwang/TextureStudy/blob/master/imgSource/TextureNodes_table.png?raw=true)
+
+
+#### Nodes Container
+![이미지](https://github.com/GisuHwang/TextureStudy/blob/master/imgSource/TextureNode%20Containers_table.png?raw=true)
+
+#### Node 계층구조
+
+* ASDisplayNode
+	* ASTableNode
+	* ASCollectionNode
+		* ASPagerNode
+	* ASCellNode
+		* ASTextCellNode
+	* ASCrollNode
+	* ASEDitableTextNode
+	* ASControllNode
+		* ASButtonNode
+		* ASTextNode
+		* ASMapNode
+		* ASImageNode
+			* ASMutiplexImageNode
+			* ASNetworkImageNode
+				* ASVideoNode
+	* ASVideoPlayerNode		
+	
+#### 기본 개념
+
+1. 레이아웃 규칙
+2. 레이아웃 요소
+
+* 레이아웃 규칙/ 레이아웃
